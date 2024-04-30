@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personas</title>
+    <link href="estilos.css" rel="stylesheet"/>
+</head>
+<body onload="mostrarPersonas()">
+    <div class='contenedor' id='cabecero'>
+        <h1>Listado de Personas</h1>
+    </div>   
+
+    <div class='contenedor'>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>Edad</td>
+                <td>DNI</td>
+            </tr>
+        </table>
+        <div class='elemento' id="elemento">
+            <ul id='personas'>
+                <!--<li>Juan Perez</li>-->
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div style="text-align: center;">
+        <button style="cursor: pointer;" onclick="agregarPersona()">+</button>
+    </div>
+    <form id="forma">
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="apellido" placeholder="Apellido">
+        <input type="text" id="edad" placeholder="Edad">
+        <input type="text" id="dni" placeholder="DNI">
+    </form>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/HttpsSebas">Seba Infante</a>. Todos los derechos reservados.</p>
+        <p>Desarrollado por <a href="https://www.linkedin.com/in/sebastian-infante-7324a3275/">Sebastian Infante</a></p>
+        <p>Contacto: <a href="mailto:sebastian25infante@gmail.com">sebastian25infante@gmail.com</a></p>
+    </footer>
+
+    <script src='persona.js'></script> 
+    <script src='app.js'></script> 
+</body>
+</html>
